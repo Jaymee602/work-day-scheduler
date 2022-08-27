@@ -28,18 +28,20 @@ $("#17").val(localStorage.getItem("17"));
 function colorCode() {
     $("textarea").each(function () {
         var currentTime = moment().format("k");
-        var hourID = $(this).attr("id");
+        var hourID = parseInt($(this).attr("id"));
         
         console.log(hourID, currentTime)
+        
+        $(this).removeClass(".past .present .future");
 
         if (hourID < currentTime) {
             $(this).addClass("past");
         } 
-        else if (hourID === currentTime){
-            $(this).addClass("present");
+        else if (hourID > currentTime){
+            $(this).addClass("future");
         }
         else {
-            $(this).addClass("future");
+            $(this).addClass("present");
         };
     });
 };
