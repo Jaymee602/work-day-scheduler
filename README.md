@@ -12,4 +12,4 @@ Keep track of your busy work schedule!
 **https://jaymee602.github.io/work-day-scheduler/**
 
 ## Preview
-![Website preview](./assets/preview.jpg)
+![Website preview](./assets/preview.png)
